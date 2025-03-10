@@ -1,6 +1,6 @@
 {
   "name": "@danielbokor/math-utils-test",
-  "version": "1.1.6",
+  "version": "1.1.7",
   "description": "This is a math utils test package.",
   "main": "./src/index.js",
   "scripts": {
@@ -8,14 +8,7 @@
   },
   "author": "",
   "license": "ISC",
-  "module": "./src/index.mjs",
   "type": "commonjs",
-  "exports": {
-    ".": {
-      "import": "./src/index.mjs",
-      "require": "./src/index.js"
-    }
-  },
   "files": [
     "src"
   ],
