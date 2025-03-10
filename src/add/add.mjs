@@ -2,7 +2,10 @@ import chalk from "chalk";
 import winston from "winston";
 
 const logger = winston.createLogger({
-  transports: [new winston.transports.Console()],
+  transports: [
+    new winston.transports.Console(),
+    new winston.transports.File({ filename: "combined.log" }),
+  ],
 });
 
 let ora;
@@ -10,7 +13,7 @@ let ora;
 try {
   ora = await import("ora");
 } catch (e) {
-  logger.log("ora not installed; proceeding without spinners");
+  logger.log("error", "ora not installed; proceeding without spinners");
 }
 
 export function showSpinner() {
@@ -18,11 +21,11 @@ export function showSpinner() {
     const spinner = ora.default("processing...").start();
     setTimeout(() => spinner.succeed("Done!"), 1000);
   } else {
-    logger.log("processing...done");
+    logger.log("info", "processing...done");
   }
 }
 
 export function add(a, b) {
-  logger.log(chalk.green("adding in ESM"));
+  logger.log("info", chalk.green("adding in ESM"));
   return a + b;
 }
