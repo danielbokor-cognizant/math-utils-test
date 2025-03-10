@@ -1,5 +1,5 @@
 {
-  "name": "math-utils-test",
+  "name": "@danielbokor/math-utils-test",
   "version": "1.0.0",
   "description": "This is a math utils test package.",
   "main": "index.js",
@@ -10,5 +10,13 @@
   "license": "ISC",
   "files": [
     "index.js"
-  ]
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/danielbokor-cognizant/math-utils-test.git"
+  },
+  "bugs": {
+    "url": "https://github.com/danielbokor-cognizant/math-utils-test/issues"
+  },
+  "homepage": "https://github.com/danielbokor-cognizant/math-utils-test#readme"
 }
