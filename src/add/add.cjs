@@ -1,5 +1,7 @@
+const chalk = require("chalk");
+
 function add(a, b) {
-  console.log("adding in Common JS");
+  console.log(chalk.blue("adding in Common JS"));
   return a + b;
 }
 

@@ -1,6 +1,6 @@
 {
   "name": "@danielbokor/math-utils-test",
-  "version": "1.2.2",
+  "version": "1.2.3",
   "description": "This is a math utils test package.",
   "main": "./src/index.cjs",
   "scripts": {
@@ -27,9 +27,6 @@
     "url": "https://github.com/danielbokor-cognizant/math-utils-test/issues"
   },
   "homepage": "https://github.com/danielbokor-cognizant/math-utils-test#readme",
-  "dependencies": {
-    "chalk": "^5.4.1"
-  },
   "devDependencies": {
     "eslint": "^9.22.0"
   },
@@ -38,5 +35,8 @@
   },
   "optionalDependencies": {
     "ora": "^8.2.0"
+  },
+  "dependencies": {
+    "chalk": "^4.1.2"
   }
 }
