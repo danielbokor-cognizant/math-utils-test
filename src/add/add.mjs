@@ -1,11 +1,12 @@
 import chalk from "chalk";
+import winston from "winston";
 
 let ora;
 
 try {
   ora = await import("ora");
 } catch (e) {
-  console.log("ora not installed; proceeding without spinners");
+  winston.info("ora not installed; proceeding without spinners");
 }
 
 export function showSpinner() {
@@ -13,11 +14,11 @@ export function showSpinner() {
     const spinner = ora.default("processing...").start();
     setTimeout(() => spinner.succeed("Done!"), 1000);
   } else {
-    console.log("processing...done");
+    winston.info("processing...done");
   }
 }
 
 export function add(a, b) {
-  console.log(chalk.green("adding in ESM"));
+  winston.info(chalk.green("adding in ESM"));
   return a + b;
 }
