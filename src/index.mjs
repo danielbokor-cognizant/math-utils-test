@@ -1,4 +1,4 @@
-import { add } from "./add/add.mjs";
+import { add, showSpinner } from "./add/add.mjs";
 import { subtract } from "./subtract/subtract.mjs";
 
-export { add, subtract };
+export { add, subtract, showSpinner };
