@@ -11,7 +11,7 @@ try {
 export function showSpinner() {
   if (ora) {
     const spinner = ora.default("processing...").start();
-    startTimeout(() => spinner.succeed("Done!"), 1000);
+    setTimeout(() => spinner.succeed("Done!"), 1000);
   } else {
     console.log("processing...done");
   }
